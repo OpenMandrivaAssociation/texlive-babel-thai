@@ -6,7 +6,7 @@
 # catalog-version 1.0.0
 Name:		texlive-babel-thai
 Version:	1.0.0
-Release:	1
+Release:	2
 Summary:	Support for Thai within babel
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/thai
