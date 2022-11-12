@@ -1,19 +1,13 @@
-# revision 30564
-# category Package
-# catalog-ctan /macros/latex/contrib/babel-contrib/thai
-# catalog-date 2013-05-19 01:05:23 +0200
-# catalog-license lppl1.3
-# catalog-version 1.0.0
 Name:		texlive-babel-thai
-Version:	1.0.0
-Release:	10
+Version:	30564
+Release:	1
 Summary:	Support for Thai within babel
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/thai
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-thai.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-thai.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-thai.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-thai.r30564.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-thai.doc.r30564.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-thai.source.r30564.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ The package provides support for typesetting Thai text. within
 the babel system.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,7 +37,8 @@ the babel system.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
