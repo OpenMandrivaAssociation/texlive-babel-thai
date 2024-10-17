@@ -3,7 +3,7 @@ Version:	30564
 Release:	2
 Summary:	Support for Thai within babel
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/thai
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/thai
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-thai.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/babel-thai.doc.r%{version}.tar.xz
